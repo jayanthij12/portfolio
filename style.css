@@ -1,0 +1,207 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#edf8f2;
+  color:#2f3e34;
+  line-height:1.7;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+/* ================= NAVBAR ================= */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 8%;
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(79,157,122,0.95);
+  backdrop-filter:blur(8px);
+  z-index:1000;
+  box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+nav h2{
+  color:#ffffff;
+  font-weight:600;
+}
+
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+}
+
+nav ul li a{
+  color:#ffffff;
+  font-weight:500;
+}
+
+nav ul li a:hover{
+  color:#dff5ea;
+}
+
+/* ================= HERO ================= */
+.hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  align-items:center;
+  padding:120px 8% 40px;
+  gap:40px;
+}
+
+.hero-text h1{
+  font-size:42px;
+  margin-bottom:12px;
+}
+
+.hero-text span{
+  color:#3b6f5a;
+}
+
+.hero-text p{
+  color:#355f4c;
+  margin-bottom:22px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 28px;
+  border-radius:30px;
+  background:#4f9d7a;
+  color:#ffffff;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#3b6f5a;
+  transform:scale(1.05);
+}
+
+/* ================= IMAGE ================= */
+.hero-img img{
+  width:300px;
+  border-radius:25px;
+  border:6px solid #3b6f5a;
+  box-shadow:0 8px 18px rgba(59,111,90,0.4);
+}
+
+/* ================= SECTIONS ================= */
+section{
+  padding:80px 8%;
+}
+
+.section-title{
+  font-size:30px;
+  margin-bottom:35px;
+  text-align:center;
+  color:#3b6f5a;
+}
+
+.section-title span{
+  color:#4f9d7a;
+}
+
+/* ================= ABOUT / TEXT ================= */
+.about{
+  max-width:900px;
+  margin:auto;
+  color:#2f3e34;
+  text-align:center;
+}
+
+.about p{
+  margin-bottom:15px;
+}
+
+/* ================= SKILLS ================= */
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+}
+
+.skill-box{
+  background:#f3fbf7;
+  padding:25px;
+  border-radius:18px;
+  text-align:center;
+  font-weight:500;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.skill-box:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 22px rgba(59,111,90,0.25);
+}
+
+/* ================= PROJECTS ================= */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.project-card{
+  background:#f3fbf7;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.project-card h3{
+  color:#3b6f5a;
+  margin-bottom:10px;
+}
+
+.project-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 22px rgba(59,111,90,0.25);
+}
+
+/* ================= CONTACT ================= */
+.contact{
+  text-align:center;
+  color:#2f3e34;
+  line-height:2;
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#4f9d7a;
+  color:#eef7f1;
+  text-align:center;
+  padding:12px;
+  font-size:13px;
+  margin-top:40px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero-img{
+    order:-1;
+  }
+
+  nav ul{
+    display:none;
+  }
+}
